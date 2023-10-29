@@ -1,0 +1,44 @@
+blueprint
+
+*sistem web sederhana digunakan untuk pencatatan dan pengecekan reimburse medical karyawan. Terdapat 3 jenis reimburse yaitu kacamata(1 tahun sekali), kesehatan(1 tahun sekali), persalinan(3 tahun sekali). Karyawan yang mendapatkan fasilitas reimburse adalah karyawan yang sudah join minimal 1 tahun.
+Budget reimburse tiap karyawan berbeda-beda sesuai dengna jobclassnya
+
+terdapat 2 role user yaitu employee dan admin, untuk admin bisa mengakses semua menu,
+list menu:
+-update data employee
+-crud data master reimburse budget (for admin)
+-crud data master reimburse Type (for admin)
+-history reimburse
+-informasi reimburse (remain,lastclaim,budget)
+-reporting (for admin)
+
+*Repositories:
+-Service ReimburseWeb
+-Service EmployeeAPI
+-Service ReimburseAPI
+
+*Database:
+DB Employee
+----------
+Employee 
+EmployeeDetail 
+
+DB Main
+--------
+ReimbursementTypeBudget
+ReimbursementType 
+Reimbursement 
+ReimbursementDetail 
+
+api -> net core 3
+web -> asp .net mvc 4
+db -> sql server
+
+userlogin:
+user: welly
+pass: 12345
+
+ 
+
+
+
